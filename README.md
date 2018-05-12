@@ -1,24 +1,9 @@
-# README
+# RailsSampleApp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+これは、投稿サイトのサンプルアプリケーションです。
 
-Things you may want to cover:
+## 動作環境
 
-* Ruby version
+- ruby: 2.5.1
+- Rails: 5.2.0
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
