@@ -1,11 +1,11 @@
-inherit_from: .rubocop_todo.ymld
+inherit_from: .rubocop_todo.yml
 
 AllCops:
   Exclude:
     - db/**/*
 
 # classやmoduleの先頭コメント
-Documetation:
+Documentation:
   Enabled: false
 
 # 日本語でのコメント
