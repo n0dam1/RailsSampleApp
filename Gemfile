@@ -6,6 +6,7 @@ ruby '2.5.1'
 # base
 gem 'rails', '~> 5.2.0'
 gem 'mini_racer', platforms: :ruby
+gem 'bootsnap', '>= 1.1.0', require: false
 
 # database
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
@@ -20,8 +21,7 @@ gem 'bootstrap'
 gem 'jquery-rails'
 gem 'popper_js'
 gem 'tether-rails'
-
-gem 'bootsnap', '>= 1.1.0', require: false
+gem 'turbolinks'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
