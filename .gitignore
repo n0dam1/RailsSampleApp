@@ -28,3 +28,5 @@
 /vendor/bundle
 .idea
 .DS_Store
+
+.dotenv
