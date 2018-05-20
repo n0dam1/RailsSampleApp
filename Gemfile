@@ -8,6 +8,8 @@ gem 'rails', '~> 5.2.0'
 gem 'mini_racer', platforms: :ruby
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise'
+gem 'sidekiq'
+gem 'sinatra'
 
 # database
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
