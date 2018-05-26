@@ -42,6 +42,8 @@ group :development do
   gem 'pry-rails'
   gem 'rubocop'
   gem 'annotate'
+
+  gem 'dotenv-rails'
 end
 
 group :test do
