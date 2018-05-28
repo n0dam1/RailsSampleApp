@@ -29,5 +29,6 @@
 .idea
 .DS_Store
 
-.dotenv
+.env
 dump.rdb
+/public/system/*
