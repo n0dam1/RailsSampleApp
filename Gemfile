@@ -10,6 +10,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise'
 gem 'sidekiq'
 gem 'sinatra'
+gem 'paperclip'
 
 # database
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
