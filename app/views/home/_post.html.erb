@@ -5,7 +5,7 @@
 	<div class="col-10 px-3">
 		<p class="my-1">
 			<strong><%= "@#{post.user.name}" %></strong>
-			・<span class="text-secondary"><%= time_ago_in_words(post.created_at) %></span>ago
+			<span class="text-secondary"><%= time_ago_in_words(post.created_at) %></span> ago
 		</p>
 		<%= post.body %>
 	</div>
