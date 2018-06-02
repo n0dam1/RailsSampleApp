@@ -11,6 +11,7 @@ gem 'devise'
 gem 'sidekiq'
 gem 'sinatra'
 gem 'paperclip'
+gem 'kaminari'
 
 # database
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
