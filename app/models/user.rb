@@ -28,10 +28,12 @@
 #  avatar_file_size       :integer
 #  avatar_updated_at      :datetime
 #  posts_count            :integer          default(0), not null
+#  role                   :integer          default(0), not null
 #
 
 class User < ApplicationRecord
   has_many :posts, inverse_of: :user
+  enum role: { user: 0, admin: 1 }
   validates :name, presence: true, uniqueness: { case_sensitive: false }
   validates_format_of :name, with: /^[a-zA-Z0-9_¥.]*$/, multiline: true
   validate :validate_name
