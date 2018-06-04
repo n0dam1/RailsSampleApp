@@ -14,6 +14,7 @@ gem 'paperclip'
 gem 'kaminari'
 gem 'counter_culture'
 gem 'activeadmin'
+gem 'dotenv-rails'
 
 # database
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
@@ -47,8 +48,6 @@ group :development do
   gem 'pry-rails'
   gem 'rubocop'
   gem 'annotate'
-
-  gem 'dotenv-rails'
 end
 
 group :test do
