@@ -15,6 +15,7 @@ gem 'kaminari'
 gem 'counter_culture'
 gem 'activeadmin'
 gem 'dotenv-rails'
+gem 'aws-sdk'
 
 # database
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
