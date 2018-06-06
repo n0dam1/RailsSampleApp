@@ -49,6 +49,13 @@ group :development do
   gem 'pry-rails'
   gem 'rubocop'
   gem 'annotate'
+  gem 'capistrano'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano3-puma'
+  gem 'capistrano-nginx'
+  gem 'capistrano-sidekiq'
 end
 
 group :test do
