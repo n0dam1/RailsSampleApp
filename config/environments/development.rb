@@ -45,8 +45,8 @@ Rails.application.configure do
     address: 'smtp.gmail.com',
     port: 587,
     authentication: :plain,
-    user_name:  ENV['SMTP_EMAIL'],
-    password: ENV['SMTP_PASSWORD']
+    user_name:  Rails.application.credentials.SMTP_EMAIL,
+    password: Rails.application.credentials.SMTP_PASSWORD
   }
 
   # Print deprecation notices to the Rails logger.
