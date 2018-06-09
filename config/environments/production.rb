@@ -70,7 +70,7 @@ Rails.application.configure do
   # config.action_mailer.raise_delivery_errors = false
 
   config.action_mailer.default_url_options = {
-    host: ENV['HOST_ADDRESS']
+    host: Rails.application.credentials.HOST_ADDRESS
   }
 
   config.action_mailer.delivery_method = :smtp
@@ -78,8 +78,8 @@ Rails.application.configure do
     address: 'smtp.gmail.com',
     port: 587,
     authentication: :plain,
-    user_name:  ENV['SMTP_EMAIL'],
-    password: ENV['SMTP_PASSWORD']
+    user_name:  Rails.application.credentials.SMTP_EMAIL,
+    password: Rails.application.credentials.SMTP_PASSWORD
   }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
@@ -107,12 +107,12 @@ Rails.application.configure do
 
   config.paperclip_defaults = {
     storage: :s3,
-    bucket: ENV['S3_BUCKET_NAME'],
-    s3_region: ENV['AWS_REGION'],
+    bucket: Rails.application.credentials.S3_BUCKET_NAME,
+    s3_region: Rails.application.credentials.AWS_REGION,
     s3_host_name: 's3-ap-northeast-1.amazonaws.com',
     s3_credentials: {
-      access_key_id: ENV['AWS_ACCESS_KEY_ID'],
-      secret_access_key: ENV['AWS_SECRET_ACCESS_KEY_ID']
+      access_key_id: Rails.application.credentials.AWS_ACCESS_KEY_ID,
+      secret_access_key: Rails.application.credentials.AWS_SECRET_ACCESS_KEY_ID
     }
   }
 end
